@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="个人作品集 — Web 开发、公众号文章排版、AIGC 与 Python 程序设计作品" />
+  <title>个人作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="gradient-orb gradient-orb--1" aria-hidden="true"></div>
+  <div class="gradient-orb gradient-orb--2" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span class="logo-text">个人作品集</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#projects">作品</a></li>
+        <li><a href="#about">关于</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Personal Portfolio
+      </div>
+      <h1 class="hero-title">
+        <span class="gradient-text">个人</span>
+        作品集
+      </h1>
+      <p class="hero-desc">
+        包括Web开发、公众号文章排版、AIGC与Python程序设计作品
+      </p>
+      <a href="#projects" class="hero-cta">
+        浏览作品
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8 3v10M8 13l-4-4M8 13l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <section id="projects" class="projects container">
+      <div class="section-header">
+        <h2 class="section-title">作品列表</h2>
+        <p class="section-subtitle">从 Web 开发到创意实践，按方向浏览作品</p>
+      </div>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+
+    <section id="about" class="about container">
+      <div class="about-card">
+        <h2 class="section-title">关于我</h2>
+        <p>这里集中展示我的 Web 开发、内容产品、AIGC 与 Python 程序设计实践。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>Personal Portfolio</p>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <dialog id="project-modal" class="modal">
+    <div class="modal-inner">
+      <button class="modal-close" aria-label="关闭">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </dialog>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
